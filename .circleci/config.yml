@@ -5,7 +5,7 @@ orbs:
 version: 2.1
 
 jobs:
-  frontend-build:
+  build:
     docker:
       - image: cimg/base:stable
     steps:
