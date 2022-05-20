@@ -3,7 +3,7 @@ branch-defaults:
     environment: Udacity-Project-Backend-Prod
     group_suffix: null
 deploy:
-  artifact: 'Archive.zip'
+  artifact: ./udagram-api/www/Archive.zip
 environment-defaults:
   Udacity-Project-Backend-Prod:
     branch: null
