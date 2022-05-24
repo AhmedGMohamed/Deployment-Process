@@ -6,8 +6,6 @@ import { config } from "./config/config";
 export const s3 = new AWS.S3({
   signatureVersion: "v4",
   region: config.aws_region,
-  accessKeyId: config.aws_key_id,
-  secretAccessKey: config.aws_secret_access_key,
   params: { Bucket: config.aws_media_bucket },
 });
 
