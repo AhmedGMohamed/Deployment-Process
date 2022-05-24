@@ -1,13 +1,13 @@
 branch-defaults:
   default:
     environment: Udacity-Project-Backend-Prod2
-    grout_suffix: null
-deploy:
-  artifact: www/Archive.zip
+    group_suffix: null
 environment-defaults:
   Udacity-Project-Backend-Prod2:
     branch: null
     repository: null
+deploy:
+  artifact: www/Archive.zip
 global:
   application_name: Udacity-Project
   default_ec2_keyname: null
