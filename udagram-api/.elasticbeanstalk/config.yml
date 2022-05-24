@@ -1,6 +1,6 @@
 branch-defaults:
   default:
-    environment: Udacity-Project-Backend-Prod
+    environment: Udacity-Project-Backend-Prod2
 environment-defaults:
   Udacity-Project-Backend-Prod:
     branch: null
@@ -11,7 +11,7 @@ global:
   application_name: Udacity-Project
   default_ec2_keyname: null
   default_platform: Node.js 14 running on 64bit Amazon Linux 2
-  default_region: eu-central-1
+  default_region: us-east-1
   include_git_submodules: true
   instance_profile: null
   platform_name: null
