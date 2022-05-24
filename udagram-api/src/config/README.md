@@ -7,7 +7,8 @@ You need a separate S3 Media bucket !
 `POSTGRES_USERNAME` : Your Postgres DB username  
 `POSTGRES_DB` : Your Postgres DB name 
 `POSTGRES_PASSWORD` : Your Postgres DB password  
-`PORT` : Currently set to BOTH DB port && application port *Needs fix*  
+`PORT` : Your Postgres DB port
+`SERVER_PORT` : Your server port  
 `AWS_REGION` : Your MEDIA bucket AWS region EG.: "eu-west-3"  
 `AWS_PROFILE` : Set when setting up AWS CLI, by default should be set up to "default"  
 `AWS_BUCKET` : Your media bucket name EG.: "mediabucket123123"  
