@@ -2,7 +2,7 @@ branch-defaults:
   default:
     environment: Udacity-Project-Backend-Prod2
 environment-defaults:
-  Udacity-Project-Backend-Prod:
+  Udacity-Project-Backend-Prod2:
     branch: null
     repository: null
 deploy:
