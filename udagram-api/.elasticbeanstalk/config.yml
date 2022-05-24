@@ -1,6 +1,8 @@
 branch-defaults:
   default:
     environment: Udacity-Project-Backend-Prod2
+deploy:
+  artifact: www/Archive.zip
 environment-defaults:
   Udacity-Project-Backend-Prod2:
     branch: null
@@ -14,8 +16,6 @@ global:
   instance_profile: null
   platform_name: null
   platform_version: null
-  profile: null
+  profile: default
   sc: null
   workspace_type: Application
-deploy:
-  artifact: www/Archive.zip
