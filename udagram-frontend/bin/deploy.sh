@@ -1,1 +1,1 @@
-aws s3 sync ./www s3://udagramfrontend/
+aws s3 sync ./www s3://udacityprojectfrontend/
