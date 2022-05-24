@@ -6,27 +6,30 @@ import { config } from "./config/config";
 export const s3 = new AWS.S3({
   signatureVersion: "v4",
   region: config.aws_region,
-  params: { Bucket: "udacitymediabucket" },
+  accessKeyId: config.aws_key_id,
+  secretAccessKey: config.aws_secret_access_key,
+  params: { Bucket: config.aws_media_bucket },
 });
 
 // Generates an AWS signed URL for retrieving objects
 export function getGetSignedUrl(key: string): string {
   const signedUrlExpireSeconds = 60 * 5;
-
-  return s3.getSignedUrl("getObject", {
-    Bucket: "udacitymediabucket",
+  const funcParams = {
+    Bucket: config.aws_media_bucket,
     Key: key,
     Expires: signedUrlExpireSeconds,
-  });
+  };
+
+  return s3.getSignedUrl("getObject", funcParams);
 }
 
 // Generates an AWS signed URL for uploading objects
 export function getPutSignedUrl(key: string): string {
   const signedUrlExpireSeconds = 60 * 5;
-
-  return s3.getSignedUrl("putObject", {
-    Bucket: "udacitymediabucket",
+  const funcParams = {
+    Bucket: config.aws_media_bucket,
     Key: key,
     Expires: signedUrlExpireSeconds,
-  });
+  };
+  return s3.getSignedUrl("putObject", funcParams);
 }
